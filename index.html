@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- swiperjs CSS Link -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Header section Start -->
+    <header>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-regular fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search your destination.....">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+    </header>
+    <!-- Header section End -->
+    <!-- Login section Start -->
+    <div class="login-form-container">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter Your Email">
+            <input type="password" class="box" placeholder="Enter Your Password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>forget password? <a href="#">Click Here</a></p>
+            <p>Don't have an account? <a href="#">Register Now</a></p>
+        </form>
+    </div>
+    <!-- Login section End -->
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is worthwhile</h3>
+            <p>Discover new places with us, Adventure awaits.</p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="Videos/video1.mp4"></span>
+            <span class="vid-btn" data-src="Videos/video2.mp4"></span>
+            <span class="vid-btn" data-src="Videos/video3.mp4"></span>
+            <span class="vid-btn" data-src="Videos/video4.mp4"></span>
+            <span class="vid-btn" data-src="Videos/video5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="Videos/video1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- Book Section Start -->
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>K</span>
+                <span class="space"></span>
+                <span>N</span>
+                <span>O</span>
+                <span>W</span>
+            </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="Photos/Booknow.jpg" alt="">
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <h3>Where To</h3>
+                        <input type="text" placeholder="Place Name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>How Many</h3>
+                        <input type="number" placeholder="Number of Peoples">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Departure</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="Book Now"> 
+                </form>
+            </div>
+        </section>
+    <!-- Book Section End -->
+    <!-- Packages Section Start -->
+        <section class="packages" id="packages">
+            <h1 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>K</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Photos/Mumbai.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Mumbai</h3>
+                        <p>Explore Mumbai: A vibrant blend of heritage,culture,and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Egypt.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Egypt</h3>
+                        <p>Explore Egypt: A vibrant blend of heritage, culture, and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Tokyo.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Tokyo</h3>
+                        <p>Explore Tokyo: A vibrant blend of heritage, culture, and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Sydney.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Sydney</h3>
+                        <p>Explore Sydney: A vibrant blend of heritage, culture, and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Hawai.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Hawaii</h3>
+                        <p>Explore Hawaii: A vibrant blend of heritage, culture, and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Paris.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fa-solid fa-location-dot"></i>Paris</h3>
+                        <p>Explore Paris: A vibrant blend of heritage, culture, and modern attractions with our exclusive tourist packages tailored for an unforgettable experience!</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Packages Section End -->
+    <!-- Services Section Start -->
+        <section class="services" id="services">
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h3>Affordable Hotels</h3>
+                    <p>Offering budget-friendly hotels for a comfortable and affordable travel experience.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>Food And Drinks</h3>
+                    <p>Serving delicious food and drinks to satisfy your cravings at affordable prices.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Safety Guides</h3>
+                    <p>Providing essential safety guides for a secure and worry-free travel experience.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <h3>Around the world</h3>
+                    <p>Discovering top destinations and experiences from around the world.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-plane"></i>
+                    <h3>Fastest Travel</h3>
+                    <p>Providing the fastest travel options for swift and efficient journeys.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <h3>Adventures</h3>
+                    <p>Offering thrilling adventures for an unforgettable and exhilarating experience.</p>
+                </div>
+            </div>
+        </section>
+    <!-- Services Section End -->
+    <!-- Gallery Section Start -->
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Photos/Gallary1.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary2.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary3.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary4.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary5.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary6.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary7.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary8.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="Photos/Gallary9.jpg" alt="">
+                    <div class="content">
+                        <h3>Amazing Place</h3>
+                        <p>Discover the hidden gems and breathtaking beauty of Amazing Place, where adventure meets serenity.</p>
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Gallery Section End -->
+    <!-- Review Section Start -->
+        <section class="testimonials" id="reviews">
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+                <span>s</span>
+            </h1>
+            <div class="testimonials-box">
+                <div class="wrapper">
+                    <div class="Testimonials-item">
+                        <div class="box">
+                            <img src="Photos/Review1.jpg" alt="">
+                            <h3>Liza Grey</h3>
+                            <p>Amazing Place offers an unforgettable experience, blending stunning natural landscapes with rich cultural heritage.</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Testimonials-item">
+                        <div class="box">
+                            <img src="Photos/Review2.jpg" alt="">
+                            <h3>Jemmy Watson</h3>
+                            <p>Amazing Place offers an unforgettable experience, blending stunning natural landscapes with rich cultural heritage.</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Testimonials-item">
+                        <div class="box">
+                            <img src="Photos/Review3.jpg" alt="">
+                            <h3>Anna Morgan</h3>
+                            <p>Amazing Place offers an unforgettable experience, blending stunning natural landscapes with rich cultural heritage.</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Review Section End -->
+    <!-- Contact Section Start -->
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="Photos/Contact.jpg" alt="">
+                </div>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="ca0c0363-8e78-4f3c-be0a-24d59bda2928">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name" name="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject">
+                    </div>
+                    <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="Send">
+                </form>
+            </div>
+        </section>
+    <!-- Contact Section End -->
+    <!-- Footer Section Start -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About Us</h3>
+                    <p>Whether you're seeking adventure, relaxation, or cultural experiences, we're here to inspire and guide you every step of the way. Discover your next adventure with us!</p>
+                </div>
+                <div class="box">
+                    <h3>Branch Locations</h3>
+                    <a href="#"><i class="fa-solid fa-location-dot"> </i> India</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"> </i> USA</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"> </i> UK</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"> </i> UAE</a>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a> 
+                    <a href="#book">Book</a>
+                    <a href="#packages">Packages</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reviews">Review</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                </div>
+            </div>
+            <h1 class="credit">Created By <span>Miss. Vrushali Pagar</span> | all rights reserved!</h1>
+        </section>
+    <!-- Footer Section End -->
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
